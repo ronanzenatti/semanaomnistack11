@@ -1,0 +1,15 @@
+const connection = require('../database/connection');
+
+module.exports = {
+    async index(request, response) {
+
+        const ong_id = request.headers.authorization;
+        const { id } = request.params;
+
+        const incidents = await connection('incidents').where('ong_id', ong_id).select('*')
+            .catch(err => {
+                return response.json({ erro: err });
+            });
+        return response.json(incidents);
+    }
+}
