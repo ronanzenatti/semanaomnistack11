@@ -1,0 +1,73 @@
+.register-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    width: 100%;
+    height: 90%;
+    max-width: 1120px;
+    background: #f0f0f5;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 8px;
+    padding: 96px;
+}
+
+section {
+    width: 100%;
+    max-width: 380px;
+}
+
+section h1 {
+    font-size: 32px;
+    margin: 64px 0 32px;
+}
+
+section p {
+    font-size: 18px;
+    color: #737380;
+    line-height: 32px;
+}
+
+section a {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #41414d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+section svg {
+    margin-right: 8px;
+}
+
+section a:hover {
+    opacity: 0.8;
+}
+
+.register-container .content form {
+    width: 100%;
+    max-width: 450px;
+}
+
+.register-container .content form input {
+    margin-top: 8px;
+}
+
+form .form-group {
+    display: flex;
+}
+
+form .form-group input+input {
+    margin-left: 8px;
+}

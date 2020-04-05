@@ -10,7 +10,7 @@ module.exports = {
         await connection('ongs').insert({
             id, name, email, whatsapp, city, uf
         }).catch(err => {
-            return response.json({ erro: err });
+            return response.status(400).json({ error: err });
         })
 
         return response.json({ id });
